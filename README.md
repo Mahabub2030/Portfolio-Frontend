@@ -7,7 +7,7 @@
 ## Live Link
 
 ```
-https://mukit-hossen-portfolio.vercel.app/
+https://mahabubalam.vercel.app/
 ```
 
 ## Features
@@ -37,11 +37,11 @@ https://mukit-hossen-portfolio.vercel.app/
 ## Installation & Setup
 
 ```
-git clone https://github.com/MukitHossen7/My-Portfolio-Frontend.git
+git clone https://github.com/Mahabub2030/Portfolio-Frontend
 ```
 
 ```
-cd My-Portfolio-Frontend
+cd Portfolio-Frontend
 ```
 
 ```
@@ -51,7 +51,7 @@ npm install
 Create a **.env.local** file and add:
 
 ```
-NEXT_PUBLIC_BASE_API=http://localhost:5000/api/v1
+NEXT_PUBLIC_BASE_API=http://localhost:8000/api/v1
 DATABASE_URL=postgresql://username:password@localhost:5432/portfolio_db
 JWT_SECRET=your_jwt_secret
 ```
@@ -89,41 +89,8 @@ b5a7-portfolio/
 
 ## Author
 
-- Developed by **Mukit Hossen**
+- Developed by **Mahabub ALam**
 - **FullStack Developer**
 
 ---
 
-## Dependencies
-
-- "jsonwebtoken": "^9.0.2",
-- "next": "15.5.4",
-- "next-auth": "^4.24.11",
-- "next-themes": "^0.4.6",
-- "ogl": "^1.0.11",
-- "radix-ui": "^1.4.3",
-- "react": "19.1.0",
-- "react-dom": "19.1.0",
-- "react-hook-form": "^7.63.0",
-- "react-icons": "^5.5.0",
-- "react-type-animation": "^3.2.0",
-- "sonner": "^2.0.7",
-- "tailwind-merge": "^3.3.1",
-- "three": "^0.180.0",
-- "zod": "^4.1.11"
-
-## DevDependencies
-
-- "@eslint/eslintrc": "^3",
-- "@tailwindcss/postcss": "^4",
-- "@types/jsonwebtoken": "^9.0.10",
-- "@types/node": "^20",
-- "@types/react": "^19",
-- "@types/react-dom": "^19",
-- "@types/three": "^0.180.0",
-- "eslint": "^9",
-- "eslint-config-next": "15.5.4",
-- "tailwindcss": "^4",
-- "tw-animate-css": "^1.4.0",
-- "typescript": "^5"
-# Portfolio-Frontend
