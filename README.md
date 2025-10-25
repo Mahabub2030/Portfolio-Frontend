@@ -10,6 +10,13 @@
 https://mahabubalam.vercel.app/
 ```
 
+## admin infromation
+
+```
+email:mahaubalom709@gmail.com
+password:20302030WA@
+```
+
 ## Features
 
 - Public users can view all blogs and individual blog pages
@@ -93,4 +100,3 @@ b5a7-portfolio/
 - **FullStack Developer**
 
 ---
-
