@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import logo from "../../assets/icons/logo.png";
-import Image from "next/image";
+import LogoutButton from "../modules/auth/LogOutButton";
 import {
   Sidebar,
   SidebarContent,
@@ -15,7 +14,6 @@ import {
   SidebarMenuItem,
   SidebarRail,
 } from "../ui/sidebar";
-import LogoutButton from "../modules/auth/LogOutButton";
 
 // This is sample data.
 const data = {
@@ -50,11 +48,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <Sidebar {...props} className="flex flex-col h-full">
         <Link href="/">
           <SidebarHeader className="bg-[#020617] pl-4">
-            <Image
+            <h1 className="text-secondary text-lg">Mahabub</h1>
+            {/* <Image
               src={logo}
               alt="Logo"
               className="w-8 h-auto object-contain invert brightness-20"
-            />
+            /> */}
           </SidebarHeader>
         </Link>
 

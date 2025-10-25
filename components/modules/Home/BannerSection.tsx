@@ -57,9 +57,11 @@ export default function BannerSection() {
             />
           </h2>
           <p className="text-gray-300 mb-7 text-lg">
-            Results-driven Agriculture Engineer with over 20 years of
-            distinguished experience in managing and directing roads, land
-            development,
+            A results-oriented Data Analyst with 3+ years of experience in
+            managing and analyzing data across online and offline platforms.
+            Expert in building interactive, user-friendly dashboards with
+            role-based data visualization to support informed decision-making
+            and business growth.
           </p>
 
           {/* Buttons */}
