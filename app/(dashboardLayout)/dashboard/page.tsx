@@ -1,6 +1,7 @@
 import { CalendarDays, Mail, ShieldCheck, User } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
+import profile from "../../../assets/profile.jpg";
 import { Badge } from "../../../components/ui/badge";
 import {
   Card,
@@ -9,7 +10,6 @@ import {
   CardTitle,
 } from "../../../components/ui/card";
 import { getMe } from "../../../services/userServices";
-
 export const metadata: Metadata = {
   title: "Mahabub - Manage Project | Portfolio Dashboard",
   description:
@@ -24,9 +24,7 @@ const DashboardHomePage = async () => {
         <CardHeader className="flex flex-col items-center gap-3 text-center">
           <div className="relative w-28 h-28 rounded-full overflow-hidden border-2 border-gray-700 shadow-md">
             <Image
-              src={
-                "https://i.pinimg.com/564x/6a/6b/72/6a6b72a2d5a5154b1ab70e341bff7dca.jpg"
-              }
+              src={profile}
               alt={adminData?.name}
               fill
               className="object-cover"

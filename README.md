@@ -1,6 +1,6 @@
 # My Portfolio
 
-- This project is my **personal portfolio website** designed to showcase Mukit Hossen’s work, projects, and blogs. It includes both **public-facing pages** for visitors and a **private dashboard** for the portfolio owner to manage content securely.
+- This project is my **personal portfolio website** designed to showcase Mahabub ALam’s work, projects, and blogs. It includes both **public-facing pages** for visitors and a **private dashboard** for the portfolio owner to manage content securely.
 
 ---
 

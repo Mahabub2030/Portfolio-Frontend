@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
 import { Toaster } from "../components/ui/sonner";
+import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mukit Hossen - Home | Frontend Developer Portfolio",
+  title: "Mahabub ALam - Home | Frontend Developer Portfolio",
   description:
-    "Welcome to Mukit Hossen's portfolio. Explore projects, blogs, and professional profile built with React, Next.js, and JavaScript.",
+    "Welcome to Mahabub ALam's portfolio. Explore projects, blogs, and professional profile built with React, Next.js, and JavaScript.",
 };
 
 export default function RootLayout({
