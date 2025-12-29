@@ -3,8 +3,8 @@
 import { revalidateTag } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { IProjectFormData } from "../../types";
 import { getAdminData } from "../../helpers/getAdminData";
+import { IProjectFormData } from "../../types";
 
 // ---------------- CREATE ----------------
 export const createProjectServerAction = async (
@@ -32,7 +32,7 @@ export const createProjectServerAction = async (
     body: JSON.stringify(payload),
   });
   if (!res.ok) throw new Error("Failed to create project");
-  revalidateTag("PROJECT");
+  revalidateTag("PROJECT", {});
   return await res.json();
 };
 
@@ -60,7 +60,7 @@ export const updateProjectServerAction = async (
   );
 
   if (!res.ok) throw new Error("Failed to update project");
-  revalidateTag("PROJECT");
+  revalidateTag("PROJECT", {});
   return await res.json();
 };
 
@@ -84,6 +84,6 @@ export const deleteProjectServerAction = async (slug: string) => {
     }
   );
   if (!res.ok) throw new Error("Failed to delete blog");
-  revalidateTag("PROJECT");
+  revalidateTag("PROJECT", {});
   return await res.json();
 };

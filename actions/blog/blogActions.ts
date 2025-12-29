@@ -3,8 +3,8 @@
 import { revalidateTag } from "next/cache";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { IBlogFormData } from "../../types";
 import { getAdminData } from "../../helpers/getAdminData";
+import { IBlogFormData } from "../../types";
 
 // ---------------- CREATE ----------------
 export const createBlogServerAction = async (blogData: IBlogFormData) => {
@@ -29,7 +29,7 @@ export const createBlogServerAction = async (blogData: IBlogFormData) => {
     body: JSON.stringify(blogPayload),
   });
   if (!res.ok) throw new Error("Failed to create blog");
-  revalidateTag("BLOG");
+  revalidateTag("BLOG", {});
   return await res.json();
 };
 
@@ -54,7 +54,7 @@ export const updateBlogServerAction = async (
   });
 
   if (!res.ok) throw new Error("Failed to update blog");
-  revalidateTag("BLOG");
+  revalidateTag("BLOG", {});
   return await res.json();
 };
 
@@ -77,6 +77,6 @@ export const deleteBlogServerAction = async (slug: string) => {
   });
 
   if (!res.ok) throw new Error("Failed to delete blog");
-  revalidateTag("BLOG");
+  revalidateTag("BLOG", {});
   return await res.json();
 };

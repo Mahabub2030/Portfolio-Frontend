@@ -1,7 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { BoltIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import profile from "../../../assets/profile.jpg";
+import { Avatar, AvatarFallback } from "../../ui/avatar";
+import { Button } from "../../ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,9 +15,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../../ui/dropdown-menu";
-import { Button } from "../../ui/button";
-import { Avatar, AvatarFallback, AvatarImage } from "../../ui/avatar";
-
 export default function UserMenu({ user }: { user: any }) {
   return (
     <DropdownMenu>
@@ -23,14 +24,8 @@ export default function UserMenu({ user }: { user: any }) {
           className="h-auto p-0 hover:bg-transparent focus:ring focus:ring-gray-700-500 rounded-full"
         >
           <Avatar className="w-10 h-10 border border-transparent hover:border-gray-700-500 transition-colors duration-200">
-            <AvatarImage
-              src="/male-avatar-boy-face-man-user-7.svg"
-              alt="Profile image"
-            />{" "}
-            {/* Updated path */}
-            <AvatarFallback className="bg-gray-800 text-gray-200">
-              KK
-            </AvatarFallback>
+            <Image src={profile} alt="Profile image" /> {/* Updated path */}
+            <AvatarFallback className="bg-gray-800 text-gray-200"></AvatarFallback>
           </Avatar>
         </Button>
       </DropdownMenuTrigger>

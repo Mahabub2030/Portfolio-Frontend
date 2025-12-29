@@ -1,12 +1,14 @@
 "use client";
 
-import { z } from "zod";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
-import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
 import { useRouter } from "next/navigation";
 
+import { createLogin } from "../../../actions/auth/auth";
+import { Button } from "../../ui/button";
 import {
   Form,
   FormControl,
@@ -16,8 +18,6 @@ import {
   FormMessage,
 } from "../../ui/form";
 import { Input } from "../../ui/input";
-import { Button } from "../../ui/button";
-import { createLogin } from "../../../actions/auth/auth";
 
 const formSchema = z.object({
   email: z.email(),
@@ -45,7 +45,7 @@ const LoginFrom = () => {
       const result = await createLogin(loginData);
       if (result.success) {
         toast.success("Logged In Successful");
-        router.push("/");
+        router.push("/dashboard");
       }
     } catch (error) {
       console.error(error);
