@@ -72,8 +72,8 @@ export default function BannerSection() {
               </button>
             </Link>
             <a
-              href="https://drive.google.com/file/d/1h8iknJYJNBNMkFVJ_D6weC6WSAkO3LDb/view?usp=sharing"
-              download="https://drive.google.com/file/d/1h8iknJYJNBNMkFVJ_D6weC6WSAkO3LDb/view?usp=sharing"
+              href="https://drive.google.com/file/d/1syLkOYRmNFyP9XD12UG0BQQohJGXE2F5/view?usp=sharing"
+              download="https://drive.google.com/file/d/1syLkOYRmNFyP9XD12UG0BQQohJGXE2F5/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="relative flex items-center gap-2 px-6 py-2 font-medium text-gray-100 bg-[#020617] rounded-lg transition-colors duration-300 overflow-hidden border border-gray-700 cursor-pointer"
