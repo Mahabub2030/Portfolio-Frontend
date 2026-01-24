@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 const HomePage = async () => {
   const { data: projectData } = await getAllProjects();
   return (
-    <div className="bg-[#020617]">
+    <div className="bg-[#628141]">
       <BannerSection />
       <AboutMeSection />
       <SkillSection />

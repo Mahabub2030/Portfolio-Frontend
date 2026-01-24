@@ -9,7 +9,7 @@ import { HoverBorderGradient } from "../../ui/hover-border-gradient";
 
 export default function BannerSection() {
   return (
-    <section className="relative bg-[#020617]  flex   items-center justify-center px-4 md:px-6 py-16 lg:py-0 overflow-hidden">
+    <section className="relative  flex  bg-[#435663] items-center justify-center px-4 md:px-6 py-16 lg:py-0 overflow-hidden">
       <div className="absolute inset-0 z-0 pointer-events-none">
         <LightRays
           raysOrigin="top-center"
@@ -28,7 +28,7 @@ export default function BannerSection() {
         {/* Left Side */}
         <div>
           <div className="mb-5">
-            <HoverBorderGradient className="bg-[#1E2234]">
+            <HoverBorderGradient className="">
               <span className="inline-block text-gray-200 font-bold rounded-full text-base">
                 👋 Hey there!
               </span>
