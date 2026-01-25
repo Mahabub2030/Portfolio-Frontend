@@ -46,7 +46,7 @@ export function Experience() {
             🏢 Nabatat Contracting Company
           </h2>
           <p className="text-gray-400">
-            Dammam, Saudi Arabia &nbsp;|&nbsp; Feb 2022 – 2026
+            Dammam, Saudi Arabia &nbsp;|&nbsp; Feb 2021 – 2026
           </p>
           <p className="text-gray-300 font-medium">Position: Data Analyst</p>
         </div>

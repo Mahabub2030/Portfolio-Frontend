@@ -14,7 +14,7 @@ const Circle = forwardRef<
       ref={ref}
       className={cn(
         "z-10 flex items-center justify-center rounded-full border border-gray-700 bg-gradient-to-br from-white/80 to-white/90 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)] shadow-gray-200",
-        className
+        className,
       )}
     >
       {children}
@@ -47,7 +47,7 @@ export function Educations() {
         {/* 🎓 B.Sc. in CSE */}
         <div className="p-6 bg-[#0f172a] rounded-2xl shadow-lg border border-gray-700 hover:scale-[1.02] transition-transform duration-300">
           <h2 className="text-xl font-semibold text-gray-100">
-            🎓 B.Sc. in Computer Science & Engineering (CSE)
+            🎓 B.Sc. in Computer Science & Program (CSE)
           </h2>
           <p className="text-gray-400 mt-1">Dhaka, Bangladesh | 2016 – 2020</p>
           <p className="text-gray-300 mt-3">

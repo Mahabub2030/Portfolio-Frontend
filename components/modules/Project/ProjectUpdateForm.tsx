@@ -1,14 +1,14 @@
 "use client";
 
-import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 import { toast } from "sonner";
 import { updateProjectServerAction } from "../../../actions/project/projectAction";
-import { Label } from "../../ui/label";
-import { Input } from "../../ui/input";
-import { Textarea } from "../../ui/textarea";
 import { Button } from "../../ui/button";
+import { Input } from "../../ui/input";
+import { Label } from "../../ui/label";
+import { Textarea } from "../../ui/textarea";
 
 interface Project {
   slug: string;
@@ -31,7 +31,7 @@ export default function ProjectUpdateForm({ project }: { project: Project }) {
 
   const router = useRouter();
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
