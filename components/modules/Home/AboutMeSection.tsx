@@ -1,5 +1,7 @@
 "use client";
+import Image from "next/image";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
+import profileImage from "../../../assets/Mahabub.jpeg";
 import { SpinningText } from "../../ui/spinning-text";
 
 const AboutMeSection = () => {
@@ -24,14 +26,14 @@ const AboutMeSection = () => {
             {/* Center image */}{" "}
             <div className="relative w-[90%] h-[90%] rounded-full overflow-hidden z-10">
               {" "}
-              {/* <Image
-                src="https://bairesdev.mo.cloudinary.net/blog/2022/08/portrait-of-a-man-using-a-computer-in-a-modern-office-picture-id1344688156-1.jpg?tx=w_1920,q_auto"
+              <Image
+                src={profileImage}
                 alt="Profile Picture"
                 width={256}
                 height={256}
                 className="object-cover w-full h-full rounded-full"
                 priority
-              />{" "} */}
+              />
             </div>{" "}
           </div>{" "}
           {/* Right Section */}{" "}
@@ -79,7 +81,8 @@ const AboutMeSection = () => {
               <li className="flex items-center text-lg">
                 {" "}
                 <IoMdCheckmarkCircleOutline className="w-6 h-6 mr-3 text-cyan-400 flex-shrink-0" />{" "}
-                Focused on Backend side and Data Structures, Algorithms, OOP{" "}
+                Focused on Backend side and Data Structures, Algorithms,
+                OOP{" "}
               </li>{" "}
               <li className="flex items-center text-lg">
                 {" "}
