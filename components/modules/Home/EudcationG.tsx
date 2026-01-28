@@ -47,7 +47,7 @@ export function Educations() {
         {/* 🎓 B.Sc. in CSE */}
         <div className="p-6 bg-[#0f172a] rounded-2xl shadow-lg border border-gray-700 hover:scale-[1.02] transition-transform duration-300">
           <h2 className="text-xl font-semibold text-gray-100">
-            🎓 B.Sc. in Computer Science & Program (CSE)
+            🎓 B.Sc. in Computer Science & Program
           </h2>
           <p className="text-gray-400 mt-1">Dhaka, Bangladesh | 2016 – 2020</p>
           <p className="text-gray-300 mt-3">
